@@ -23,9 +23,7 @@ hoi {}, my name is {}! if you have any questions about how to use me please type
 I'm a group moderation bot maintained by 
 @otakuzdream
 
-For any issues or questions you can contact the group
-
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
+**For any issues or questions you can contact the group.**
 
 """
 
@@ -366,7 +364,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 578095101 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
